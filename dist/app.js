@@ -10,6 +10,7 @@ const cors_1 = __importDefault(require("cors"));
 const routes_1 = require("./routes");
 const error_handling_1 = require("./middlewares/error-handling");
 const upload_1 = __importDefault(require("@/configs/upload"));
+require("dotenv/config");
 const app = (0, express_1.default)();
 exports.app = app;
 app.use((0, cors_1.default)());
