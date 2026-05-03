@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.RefundsController = void 0;
-const AppError_1 = require("@/utils/AppError");
-const prisma_1 = require("@/database/prisma");
+const AppError_1 = require("../utils/AppError");
+const prisma_1 = require("../database/prisma");
 const zod_1 = require("zod");
 const CategoriesEnum = zod_1.z.enum([
     "food",

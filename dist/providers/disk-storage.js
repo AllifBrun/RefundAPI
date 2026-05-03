@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.DiskStorage = void 0;
 const node_fs_1 = __importDefault(require("node:fs"));
 const node_path_1 = __importDefault(require("node:path"));
-const upload_1 = __importDefault(require("@/configs/upload"));
+const upload_1 = __importDefault(require("../configs/upload"));
 class DiskStorage {
     async saveFile(file) {
         await node_fs_1.default.promises.rename(node_path_1.default.resolve(upload_1.default.TMP_FOLDER, file), node_path_1.default.resolve(upload_1.default.UPLOADS_FOLDER, file));

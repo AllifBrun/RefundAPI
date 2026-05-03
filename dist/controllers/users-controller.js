@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.UsersController = void 0;
-const AppError_1 = require("@/utils/AppError");
-const prisma_1 = require("@/database/prisma");
+const AppError_1 = require("../utils/AppError");
+const prisma_1 = require("../database/prisma");
 const client_1 = require("@prisma/client");
 const bcrypt_1 = require("bcrypt");
 const zod_1 = require("zod");

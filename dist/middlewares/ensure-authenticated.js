@@ -2,8 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ensureAuthenticated = ensureAuthenticated;
 const jsonwebtoken_1 = require("jsonwebtoken");
-const auth_1 = require("@/configs/auth");
-const AppError_1 = require("@/utils/AppError");
+const auth_1 = require("../configs/auth");
+const AppError_1 = require("../utils/AppError");
 function ensureAuthenticated(request, response, next) {
     try {
         const authHeader = request.headers.authorization;

@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.SessionsController = void 0;
-const AppError_1 = require("@/utils/AppError");
-const auth_1 = require("@/configs/auth");
-const prisma_1 = require("@/database/prisma");
+const AppError_1 = require("../utils/AppError");
+const auth_1 = require("../configs/auth");
+const prisma_1 = require("../database/prisma");
 const jsonwebtoken_1 = require("jsonwebtoken");
 const bcrypt_1 = require("bcrypt");
 const zod_1 = require("zod");
